@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+namespace: k8s-appsody
+metadata:
+  name: appsody-privileged-crb
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: appsody-privileged
+subjects:
+-
+  kind: ServiceAccount
+  name: "builder"

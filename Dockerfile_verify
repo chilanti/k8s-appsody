@@ -1,0 +1,4 @@
+FROM ubuntu
+COPY testcontroller.sh /tmp
+RUN chmod +x /tmp/testcontroller.sh
+CMD /tmp/testcontroller.sh
