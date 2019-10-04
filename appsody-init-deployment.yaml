@@ -19,7 +19,7 @@ spec:
         securityContext: 
           privileged: true
         runAsUser: 0
-        image: chilantim/my-buildah
+        image: appsody/appsody-k8s
         imagePullPolicy: Always
         command: ['/bin/sh']
         args: ['-c', '/tmp/appsody-setup.sh']
