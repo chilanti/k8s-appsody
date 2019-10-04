@@ -1,5 +1,5 @@
 apiVersion: rbac.authorization.k8s.io/v1
-kind: RoleBinding
+kind: ClusterRoleBinding
 metadata:
   name: appsody-deployer
 roleRef:
@@ -10,3 +10,4 @@ subjects:
 -
   kind: ServiceAccount
   name: appsody-sa
+  namespace: k8s-appsody
